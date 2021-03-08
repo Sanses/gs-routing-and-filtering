@@ -1,0 +1,28 @@
+logging:
+  level:
+    root: debug
+
+
+server:
+  port: 8080
+  use-forward-headers: true
+
+
+zuul:
+  host:
+    max-per-route-connections: 100000
+    max-total-connections: 100000 
+  routes:
+    books:        
+      path: /book-service/**
+      url: http://book-service
+
+ribbon:
+  eureka:
+    enabled: false
+eureka:
+  client:
+    enabled: false
+error:
+  whitelabel:
+    enabled: false
