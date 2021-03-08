@@ -11,7 +11,6 @@
 # Clone code
 - git clone https://github.com/Sanses/gs-routing-and-filtering.git
 - cd gs-routing-and-filtering
-- git checkout ingress_and_gateway
 
 # Deploy Book MicroService
 - cd complete/book
