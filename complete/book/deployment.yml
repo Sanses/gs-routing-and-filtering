@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: book 
-          image: sansaeacr.azurecr.io/book
+          image: ${ACR_NAME}.azurecr.io/book
           imagePullPolicy: Always
           ports:
             - containerPort: 8090
