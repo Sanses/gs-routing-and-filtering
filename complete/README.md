@@ -1,3 +1,7 @@
+# Pre-Conditions
+- Deploy ingress-nginx
+  - https://kubernetes.github.io/ingress-nginx/deploy/
+
 # Azure Login and get AKS credentials
 - az login
 - az acr login -n sansaeacr
